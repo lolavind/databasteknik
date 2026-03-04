@@ -1,7 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Identity;
+
 namespace databasteknik.models;
 
 [Table("Table_Artist")]
-public class artist
+public class Artist
 {
 	[Key]
 	[Column("ArtistId")]
@@ -10,9 +14,9 @@ public class artist
 	[Column("ArtistName")]
 	public required string ArtistName {get; set;}
 
-	public Person(int ArtistId, string ArtistName)
+	/* public Artist(int ArtistId, string ArtistName)
     {
         ArtistId = ArtistId;
         ArtistName = ArtistName;
-    }
+    } */
 }

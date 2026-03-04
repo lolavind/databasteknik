@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace databasteknik.models;
 
 [Table("Table_User")]
-public class user
+public class User
 {
 	[Key]
 	[Column("UserId")]
@@ -14,11 +17,11 @@ public class user
 	public required string Email {get; set;}
 
 	[Column("Password")]
-	public string Password {get; set;}
+	public required string Password {get; set;}
 
-	public user()
-    {
-        UserName = newuser;
-		Password = password123;
-    }
+	// public User()
+    // {
+    //     UserName = newuser;
+	// 	Password = password123;
+    // }
 }
