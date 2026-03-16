@@ -11,13 +11,13 @@ public class User
 	public int UserId {get; set;}
 
 	[Column("UserName")]
-	public required string UserName {get; set;}
-
-	[Column("Email")]
-	public required string Email {get; set;}
+	public  string UserName {get; set;}
 
 	[Column("Password")]
-	public required string Password {get; set;}
+	public  string Password {get; set;}
+
+	[Column("Playlists")]
+	public List<Playlist> Playlists { get; set; } = new List<Playlist>();
 
 	// public User()
     // {

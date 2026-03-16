@@ -1,0 +1,33 @@
+@using databasteknik.Controllers
+@using databasteknik.models
+
+@model List<Playlist>
+@{
+	ViewData["Title"] = ViewBag.Title;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table table-striped">
+	<tr>
+		<th>Spellista</th>
+		<th>Åtgärder</th>
+	</tr>
+	@foreach (var playlist in Model)
+	{
+		<tr>
+			<td>@playlist.PlaylistName</td>
+			<td>
+				<a href="@Url.Action("Inspect", "Playlist", new { id = playlist.PlaylistId })"
+					   class="btn btn-secondary">Inspect
+				</a>
+
+				<a href="@Url.Action("DeletePlaylist", "Playlist", new { id = playlist.PlaylistId })"
+					   class="btn btn-sm btn-danger">Delete
+				</a>
+			</td>
+		</tr>
+	}
+</table>
+
+<a href="@Url.Action("Logout", "Account")" class="btn btn-secondary">Logout</a>

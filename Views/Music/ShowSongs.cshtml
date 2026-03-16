@@ -1,0 +1,16 @@
+@using databasteknik.models
+@using databasteknik.Controllers
+@model List<Song>
+
+<h2>Låtar</h2>
+
+<p>Antal låtar: @ViewData["AntalLater"]</p>
+
+<ul>
+@foreach(var Song in Model)
+{
+    <li>@Song.Title (@Song.Length sek)</li>
+}
+</ul>
+
+<p>Senast sparad låt: @Context.Session.GetString("SenasteLat")</p>

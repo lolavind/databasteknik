@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("databasteknik")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49baa81c28eb6448824ee23c19f16bde60158e6e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67277dfa49b57c06a013b6f00f070cd7c0ee56e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("databasteknik")]
 [assembly: System.Reflection.AssemblyTitleAttribute("databasteknik")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

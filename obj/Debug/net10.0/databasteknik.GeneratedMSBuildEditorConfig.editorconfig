@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
+[/Users/lovisa/edu/DB/databasteknik/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/lovisa/edu/DB/databasteknik/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,12 +34,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/lovisa/edu/DB/databasteknik/Views/Music/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVzaWMvSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lovisa/edu/DB/databasteknik/Views/Music/NewSong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVzaWMvTmV3U29uZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lovisa/edu/DB/databasteknik/Views/Music/ShowSongs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVzaWMvU2hvd1NvbmdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lovisa/edu/DB/databasteknik/Views/Playlist/Inspect.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxheWxpc3QvSW5zcGVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lovisa/edu/DB/databasteknik/Views/Playlist/MyPlaylists.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGxheWxpc3QvTXlQbGF5bGlzdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/lovisa/edu/DB/databasteknik/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/lovisa/edu/DB/databasteknik/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lovisa/edu/DB/databasteknik/Views/User/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/lovisa/edu/DB/databasteknik/Views/User/Users.cshtml]

@@ -1,0 +1,67 @@
+@* @using databasteknik.models
+@using databasteknik.Controllers
+
+@model Playlist
+@{
+    ViewData["Title"] = Model.PlaylistName;
+    var songCount = ViewData["SongCount"];
+}
+
+<h2>@ViewData["Title"] (@songCount låtar)</h2>
+
+<table>
+    <tr><th>Titel</th><th>Längd (sek)</th><th>Åtgärder</th></tr>
+@foreach(var song in Model.Songs)
+{
+    <tr>
+        <td>@song.Title</td>
+        <td>@song.Length</td>
+        <td>
+            <a href="/Playlist/DeleteSong?playlistId=@Model.PlaylistId&songId=@song.SongId">Delete</a>
+        </td>
+    </tr>
+}
+</table>
+
+<a href="/Playlist/MyPlaylists">Back</a> *@
+
+@model databasteknik.models.Playlist
+@* @{
+	ViewBag.Title = "Spellista: " + Model.PlaylistName;
+	Layout = "_Layout";
+} *@
+
+<h2>@Model.PlaylistName</h2>
+<p>Antal låtar: @ViewData["SongCount"]</p>
+
+@if (Model.Songs.Count == 0)
+{
+	<p>Inga låtar i spellistan.</p>
+}
+else
+{
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Låt</th>
+				<th>Längd</th>
+				<th>Åtgärd</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var song in Model.Songs)
+			{
+				<tr>
+					<td>@song.Title</td>
+					<td>@song.Length</td>
+					<td>
+						<a href="@Url.Action("DeleteSong", "Playlist", new { playlistId = Model.PlaylistId, songId = song.SongId })"
+						   class="btn btn-sm btn-danger">Delete</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}
+
+<a href="@Url.Action("MyPlaylists", "Playlist")" class="btn btn-secondary">Back</a>

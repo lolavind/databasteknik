@@ -42,9 +42,6 @@ public class AccountController : Controller
 		// Rensar sessionen
 		HttpContext.Session.Clear();
 
-		// Återställer spellistorna
-		PlaylistController.ResetPlaylists();
-
 		// Omdirigera till inloggningssidan
 		return RedirectToAction("Login");
 	}

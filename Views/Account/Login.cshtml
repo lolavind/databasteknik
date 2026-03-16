@@ -1,0 +1,20 @@
+@{
+	ViewData["Title"] = "Login";
+}
+
+<h2>Login</h2>
+
+@* Formulär för inloggning *@
+<form method="post">
+	<label>Användarnamn:</label>
+	<input type="text" name="username" />
+	<label>Lösenord:</label>
+	<input type="password" name="password" />
+	<button type="submit">Login</button>
+</form>
+
+@*Vid fel, gör det rött*@
+@if (ViewBag.Error != null)
+{
+	<p style="color:red">@ViewBag.Error</p>
+}

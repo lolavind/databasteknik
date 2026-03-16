@@ -1,0 +1,20 @@
+@using databasteknik.models
+@using databasteknik.Controllers
+@* @model IEnumerable<databasteknik.models.Song> *@
+@model Song
+
+<h2>Skapa låt</h2>
+
+<form asp-action="ShowSongs" method="post">
+    
+    Titel:
+    <input asp-for="Title" />
+    <br>
+
+    Längd:
+    <input asp-for="Length" />
+    <br>
+
+    <button type="submit">Save</button>
+
+</form>
